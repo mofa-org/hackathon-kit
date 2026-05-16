@@ -9,21 +9,14 @@ const { t } = useI18n()
 
 <template>
   <section id="about" class="relative py-32 bg-bg-primary overflow-hidden">
-    <!-- Background video (parallax) -->
-    <div class="absolute inset-0 hidden md:block pointer-events-none parallax-bg">
-      <video
-        autoplay loop muted playsinline webkit-playsinline
-        preload="auto"
-        poster="/photos/hero-video-poster.jpg"
-        class="w-full h-full object-cover opacity-15"
-        style="will-change: transform; transform: translateZ(0);"
-      ><source src="/photos/hero-video-4k.mp4" type="video/mp4" /></video>
-      <!-- Fade overlays -->
+    <!-- Background video (parallax) — add your video to public/photos/ and uncomment -->
+    <!-- <div class="absolute inset-0 hidden md:block pointer-events-none parallax-bg">
+      <video autoplay loop muted playsinline preload="auto" poster="/photos/hero-video-poster.jpg" class="w-full h-full object-cover opacity-15" style="will-change: transform; transform: translateZ(0);"><source src="/photos/hero-video.mp4" type="video/mp4" /></video>
       <div class="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-bg-primary to-transparent"></div>
       <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-bg-primary to-transparent"></div>
       <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-bg-primary to-transparent"></div>
       <div class="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-bg-primary to-transparent"></div>
-    </div>
+    </div> -->
 
     <div class="relative max-w-4xl mx-auto px-6">
       <!-- Quote -->
@@ -54,14 +47,10 @@ const { t } = useI18n()
           </p>
         </div>
 
-        <!-- Art video -->
-        <div class="hidden md:block shrink-0 reveal-right reveal-delay-2">
-          <video
-            autoplay loop muted playsinline webkit-playsinline preload="auto"
-            poster="/photos/art-loop-poster.jpg"
-            class="w-48 lg:w-56 rounded-2xl shadow-lg"
-          ><source src="/photos/art-loop.mp4" type="video/mp4" /></video>
-        </div>
+        <!-- Art video — add your video to public/photos/ and uncomment -->
+        <!-- <div class="hidden md:block shrink-0 reveal-right reveal-delay-2">
+          <video autoplay loop muted playsinline preload="auto" poster="/photos/art-loop-poster.jpg" class="w-48 lg:w-56 rounded-2xl shadow-lg"><source src="/photos/art-loop.mp4" type="video/mp4" /></video>
+        </div> -->
         </div>
       </div>
 

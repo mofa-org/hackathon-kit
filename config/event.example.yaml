@@ -1,6 +1,6 @@
 # Hackathon Kit — Event Configuration Example
 # Copy this to config/event.yaml and fill in your event details.
-# This file documents all Paris-specific values that were replaced with placeholders.
+# Fill in your event details below.
 
 event:
   name: "Your Hackathon Name"
